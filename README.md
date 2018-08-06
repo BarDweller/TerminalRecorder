@@ -27,5 +27,5 @@ Repeat this step until you have a session recorded that you are happy with, etc.
 
 ## To convert a session into a video file. 
 
-`/vagrant/makerecording.sh MYSCRIPT MYTIMING /vagrant/output.mp4`
+`/vagrant/makerecording.sh /tmp/MYSCRIPT /tmp/TIMING /vagrant/output.mp4`
 
