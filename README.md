@@ -11,16 +11,15 @@ First, bring up the VM using Vagrant.
 
 `vagrant up`
 
-Then ssh into it.. (passing -X if you are on linux/mac, to let vagrant launch X apps back to your host)
+Then ssh into it.. (passing `-X` if you are on linux/mac, to let vagrant launch X apps back to your host)
 
 `vagrant ssh -- -X`
 
 ## To record a session
 
-Outside the VM, use the `script` command to record your session, using an xterm with identical specs to the one that will be used to record the playback.
+Outside the VM, use the `script` command to record your session, using an xterm with identical specs to the one that will be used to record the playback. (This works real well if using `-X` as you can launch an xterm directly from the VM to your host.)
 
 `script` records timing info to one file, and character data to another. 
-_(The font can be obtained via `apt-get install fonts-inconsolata`)_
 
 `xterm -fa "Inconsolata" -fs 12 -rv -geometry 80x28 -e "script --timing=/tmp/TIMING -q /tmp/MYSCRIPT"`
 
